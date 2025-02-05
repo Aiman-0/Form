@@ -1,0 +1,130 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #8ea4b8; /* Soft Light Blue */
+    color: #8a0e0e; /* Dark text for readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack the header, form, and footer vertically */
+    justify-content: center; /* Center the content */
+    align-items: center; /* Align items in the center */
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    background-color: #d29be7; /* Soft Purple */
+    color: #ffffff; /* White text for the header */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 100%; /* Full width for the header */
+    max-width: 600px; /* Limit the width */
+    margin-bottom: 20px; /* Spacing between header and form */
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+/* Form container */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Limit the width */
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+/* Form Title */
+h2 {
+    font-size: 24px;
+    color: #31619b; /* Muted grey color for the title */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Input Fields */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #31babe; /* Focus border color (Purple) */
+    outline: none;
+}
+
+/* Styling for Grades input field */
+#grades {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+#grades:focus {
+    border-color: #FF77B3; /* Light Pink on focus for grades */
+    outline: none;
+}
+
+/* Button Style */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #3a1622; /* Soft Pink */
+    border: none;
+    color: rgb(211, 77, 171);
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #3a1622; /* Hot Pink on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #0026ff; /* Soft Blue */
+    color: #ffffff; /* White text in footer */
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px; /* Limit the width */
+}
+
+footer p {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Small devices */
+@media (max-width: 480px) {
+    form {
+        padding: 20px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
